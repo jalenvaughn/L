@@ -1,0 +1,187 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 150px; /* Adjust the height as needed */
+    width: auto; /* Keeps the logo aspect ratio */
+}
+
+/* Container Styling */
+.video-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: right; /* Centers the video horizontally */
+    align-items: center; /* Centers the video vertically, if container has a set height */
+}
+
+/* Video Styling */
+.video-section video {
+    width: 70%; /* Adjust this to make the video smaller, e.g., 90% */
+    height: auto;
+    display: block;
+}
+
+.video-text {
+    position: absolute;
+    left: 5%; /* Adjust to position text further in from the left if needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0); /* Color the text white to make it stand out on the video */
+    text-align: left;
+    max-width: 40%; /* Adjust width as desired */
+}
+
+.video-text h1 {
+    font-family: CenturyGothic;
+    font-size: 4.7em;
+    margin-bottom: 0.5em;
+}
+
+.video-text p {
+    font-size: 1.2em;
+}
+
+body {
+    font-family: CenturyGothic;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #64c3f2;
+    color: #fff;
+    padding: 15px 50px;
+}
+
+/* Ensure header is positioned relative to align background text */
+header {
+    position: relative;
+}
+
+/* Styling for LOTUS background text */
+.header-background-text {
+    position: absolute;
+    top: 50%; /* Adjust to control vertical alignment with nav bar */
+    left: 76%;
+    transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+    font-size: 10em; /* Adjust for size */
+    font-weight: bold;
+    color: rgba(25, 51, 64, 0.09); /* Low opacity */
+    font-family: CenturyGothic, sans-serif;
+    pointer-events: none; /* Make it unclickable */
+    letter-spacing: .7em;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7em; /* Adjust font size as needed */
+    font-family: CenturyGothic; /* Optional if you want to ensure the font is the same */
+    letter-spacing: .1em; /* Adjust letter spacing as needed */
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff6a00;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff8533;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+@font-face {
+    font-family: 'CenturyGothic'; /* Choose a name for the font */
+    src: url('assets/GOTHIC.TTF') format('truetype'); /* Adjust the path and format */
+    font-weight: normal; /* Specify the weight */
+    font-style: normal; /* Specify the style */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .navbar ul {
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .button {
+        padding: 15px 40px;
+    }
+}
