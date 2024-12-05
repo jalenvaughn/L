@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotus Energy</title>
+    <title>Contact Us - Lotus Energy</title>
     <link rel="stylesheet" href="contactstyle.css">
 </head>
 <body>
-
     <header>
         <div class="navbar">
-            <a href="h.html" class="logo"><img src="assets/lotusflower.png" alt="Lotus Flower"></a>
+            <a href="h.html" class="logo"><img src="assets/lotusflowerAlt.png" alt="Lotus Flower"></a>
             <nav>
                 <ul>
-                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
                     <li><a href="whatsinside.html">WHAT'S INSIDE</a></li>
                     <li><a href="aboutus.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
@@ -22,8 +21,48 @@
         </div>
         <div class="header-background-text">LOTUS</div>
     </header>
-    
-        <!-- footer -->
-        <footer>
-            <p>&copy; 2024 Lotus Energy. All rights reserved.</p>
-        </footer>
+
+    <main>
+        <section id="contact-us" class="contact-us">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Please fill out the form below with as much information as possible and we’ll get back to you as soon as possible. Thank you!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="concern-type">Select Your Concern</label>
+                    <select id="concern-type" name="concern-type" required>
+                        <option value="">-- Please Choose an Option --</option>
+                        <option value="sales">Sales</option>
+                        <option value="product-concerns">Product Concerns</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Your First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Your Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Concern</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Please describe your concern here as best you can" required></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lotus Energy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

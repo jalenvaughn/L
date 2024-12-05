@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +5,8 @@
 }
 
 .logo img {
-    height: 150px; /* Adjust the height as needed */
-    width: auto; /* Keeps the logo aspect ratio */
-}
-
-/* Container Styling */
-.video-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: right; /* Centers the video horizontally */
-    align-items: center; /* Centers the video vertically, if container has a set height */
+    height: 150px;
+    width: auto;
 }
 
 body {
@@ -26,37 +15,40 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
-    background-color: #64c3f2;
+    background-color: #193340;
     color: #fff;
-    padding: 15px 50px;
 }
 
-/* Ensure header is positioned relative to align background text */
 header {
     position: relative;
 }
 
-/* Styling for LOTUS background text */
 .header-background-text {
-    position: absolute;
-    top: 50%; /* Adjust to control vertical alignment with nav bar */
+    z-index: 1000;
+    position: fixed;
+    top: 10%;
     left: 76%;
-    transform: translate(-50%, -50%); /* Center it horizontally and vertically */
-    font-size: 10em; /* Adjust for size */
+    transform: translate(-50%, -50%);
+    font-size: 10em;
     font-weight: bold;
-    color: rgba(25, 51, 64, 0.09); /* Low opacity */
+    color: rgba(100, 195, 242, 0.09); 
     font-family: CenturyGothic, sans-serif;
-    pointer-events: none; /* Make it unclickable */
+    pointer-events: none;
     letter-spacing: .7em;
 }
-
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: #193340; 
+    z-index: 1000; 
+    padding: 15px 50px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar ul {
@@ -67,57 +59,13 @@ header {
 
 .navbar a {
     color: #fff;
-    text-decoration: none;
-    font-size: 1.7em; /* Adjust font size as needed */
-    font-family: CenturyGothic; /* Optional if you want to ensure the font is the same */
-    letter-spacing: .1em; /* Adjust letter spacing as needed */
+    text-decoration: underline;
+    font-size: 1.8em; 
+    font-family: CenturyGothic; 
+    letter-spacing: .1em; 
     font-weight: bold;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* Hero Section */
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: auto;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #ff6a00;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #ff8533;
-}
-
-/* Sections */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -128,7 +76,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Footer */
 footer {
     background-color: #000;
     color: #fff;
@@ -138,95 +85,88 @@ footer {
 }
 
 @font-face {
-    font-family: 'CenturyGothic'; /* Choose a name for the font */
-    src: url('assets/GOTHIC.TTF') format('truetype'); /* Adjust the path and format */
-    font-weight: normal; /* Specify the weight */
-    font-style: normal; /* Specify the style */
+    font-family: 'CenturyGothic';
+    src: url('assets/GOTHIC.TTF') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
-
-
-/* Informational Section */
 .info-section {
     padding: 60px 20px;
-    background-color: #f8f8f8; /* Light background for contrast */
+    background-color: #f8f8f8; 
 }
 
 .info-container {
     display: flex;
-    flex-wrap: nowrap; /* Keep image and text boxes side by side */
+    flex-wrap: nowrap; 
     align-items: center;
-    justify-content: flex-start; /* Align content to the left */
-    gap: 40px; /* Spacing between image and text boxes */
+    justify-content: flex-start; 
+    gap: 40px; 
     max-width: 1200px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
 }
 
 .info-image {
-    flex: 1; /* Adjust width of the image container */
+    flex: 1;
 }
 
 .info-image img {
-    max-width: 100%; /* Ensure the image scales well within its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20px; /* Add some style to the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .info-text-boxes {
-    flex: 2; /* Give more space to the text box container */
+    flex: 2; 
     display: flex;
-    flex-direction: column; /* Stack text boxes vertically */
-    gap: 20px; /* Spacing between text boxes */
+    flex-direction: column; 
+    gap: 20px;
 }
 
 .text-box {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some depth */
-    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
 }
 
 .text-box h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #64c3f2; /* Matches the header color */
+    color: #64c3f2; 
 }
 
 .text-box p {
     font-size: 1.3em;
-    color: #333; /* Standard text color */
+    color: #000000; 
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .info-container {
-        flex-wrap: wrap; /* Stack image and text boxes vertically on smaller screens */
+        flex-wrap: wrap; 
         justify-content: center;
         text-align: center;
     }
 
     .info-image {
-        flex: none; /* Reset flex for the image on smaller screens */
-        margin-bottom: 20px; /* Add spacing below the image */
+        flex: none; 
+        margin-bottom: 20px; 
     }
 
     .info-text-boxes {
-        flex: none; /* Reset flex for text box container on smaller screens */
+        flex: none; 
     }
 }
 
 
-
-
-/* Styling for Section Titles */
 .info-title {
-    font-size: 2.5em; /* Adjust the font size */
-    color: #64c3f2; /* Use the same color as the header for consistency */
-    font-family: CenturyGothic, sans-serif; /* Ensure the font matches your design */
-    text-align: center; /* Center the title */
-    margin-bottom: 10px; /* Add spacing between the title and the content */
-    letter-spacing: 0.15em; /* Optional: Slight spacing between letters for readability */
-    text-transform: uppercase; /* Optional: Makes the text all uppercase */
+    font-size: 2.5em; 
+    color: #64c3f2; 
+    font-family: CenturyGothic, sans-serif; 
+    text-align: center; 
+    margin-bottom: 10px; 
+    letter-spacing: 0.15em; 
+    text-transform: uppercase; 
 }

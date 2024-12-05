@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Lotus Energy</title>
+    <link rel="stylesheet" href="productstyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="h.html" class="logo"><img src="assets/lotusflowerAlt.png" alt="Lotus Flower"></a>
+            <nav>
+                <ul>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="whatsinside.html">WHAT'S INSIDE</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-background-text">LOTUS</div>
+    </header>
+
+    <section id="products" class="products">
+        <h2>All Products</h2>
+        <h3>Beverages</h3>
+        <div class="product-grid">
+            <div class="product-card" onclick="openModal('strawberry')">
+                <img src="assets/redcan1.png" alt="Strawberry Flavor">
+                <p>Lotus Strawberry</p>
+            </div>
+            <div class="product-card" onclick="openModal('orange')">
+                <img src="assets/orangecan.png" alt="Orange Flavor">
+                <p>Lotus Orange</p>
+            </div>
+            <div class="product-card" onclick="openModal('pineapple')">
+                <img src="assets/LotusAlternateFlavors-1-1.png" alt="Pineapple Flavor">
+                <p>Lotus Pineapple</p>
+            </div>
+        </div>
+        <section id="products" class="apparel">
+        <h3>Apparel</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="assets/tote.jpg" alt="Lotus Tote Bag">
+                    <p>Lotus Tote Bag - $15.99</p>
+            </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/phone.jpg" alt="Lotus Phone Case">
+                        <p>Lotus Phone Case - $19.99</p>
+            </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="assets/notebook.jpg" alt="Lotus Notebook">
+                        <p>Lotus Notebook - $9.99</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="productName"></h2>
+            <p id="productFlavor"></p>
+            <button onclick="openBuyModal()">Where to Buy</button>
+        </div>
+    </div>
+
+    <div id="buyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBuyModal()">&times;</span>
+            <h3>Where to Buy</h3>
+            <ul>
+                <li><a href="https://www.amazon.com" target="_blank">Amazon: 4pk 12oz Cans, 6pk 12oz Cans, 12pk 12oz Cans</a></li>
+                <li><a href="https://www.target.com" target="_blank">Target: 6pk 12oz Cans, 12pk 12oz Cans</a></li>
+                <li><a href="https://www.walmart.com" target="_blank">Walmart: 6pk 12oz Cans, 12pk 12oz Cans</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Lotus Energy. All rights reserved.</p>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+</html>
